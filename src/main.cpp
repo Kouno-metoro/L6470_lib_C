@@ -21,14 +21,23 @@ void setup(){
   pinMode(stepSPI_MOSI,OUTPUT);
   pinMode(stepSPI_MISO,INPUT);
   pinMode(stepSPI_SCK,OUTPUT);
+  pinMode(step1_SS,OUTPUT);
+  pinMode(step2_SS,OUTPUT);
+  pinMode(step3_SS,OUTPUT);
   pinMode(step4_SS,OUTPUT);
+  pinMode(step5_SS,OUTPUT);
   digitalWrite(step1_SS,HIGH);
+  digitalWrite(step2_SS,HIGH);
+  digitalWrite(step3_SS,HIGH);
   digitalWrite(step4_SS,HIGH);
+  digitalWrite(step5_SS,HIGH);
+
+
 
   SPI.setDataMode(SPI_MODE2);
   SPI.begin();
 
-  stephardstop(step4);
+  stephardstop(all);
   stepreset(all);
   delay(100);
 

@@ -1,17 +1,18 @@
 #ifndef _steplib_h
 #define _steplib_h
 
-void sendconfig(int,uint8_t);
-void sendconfigs(int,void*,size_t);
-void stephardstop(int);
-void stepsoftstop(int);
-void stepreset(int);
-void voltage_config(int,uint8_t,uint8_t,uint8_t);
-void current_config(int,uint8_t);
-void reset_position(int);
-void accel_config(int,uint16_t,uint16_t);
-void stepmove(int,int32_t);
-void stepmoveposition(int,int32_t,int32_t);
-void stepfullstep(int);
+//プロトタイプ宣言
+void sendconfig(uint8_t,uint8_t);
+void sendconfigs(uint8_t,void*,size_t);
+void stephardstop(uint8_t);
+void stepsoftstop(uint8_t);
+void stepreset(uint8_t);
+void voltage_config(uint8_t,uint8_t,uint8_t,uint8_t);
+void current_config(uint8_t,uint8_t);
+void reset_position(uint8_t);
+void accel_config(uint8_t,uint16_t,uint16_t);
+void stepmove(uint8_t,int32_t);
+void stepmoveposition(uint8_t,int32_t,int32_t);
+void stepfullstep(uint8_t);
 
 #endif
