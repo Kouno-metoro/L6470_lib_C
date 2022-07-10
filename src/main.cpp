@@ -22,6 +22,7 @@ void setup(){
   pinMode(stepSPI_MISO,INPUT);
   pinMode(stepSPI_SCK,OUTPUT);
   pinMode(step4_SS,OUTPUT);
+  digitalWrite(step1_SS,HIGH);
   digitalWrite(step4_SS,HIGH);
 
   SPI.setDataMode(SPI_MODE2);
